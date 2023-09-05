@@ -52,3 +52,35 @@ const bankAccount: BankAccount = {
 }
 console.log(bankAccount);
 
+interface Bookinfo {
+    title: string,
+    author: string,
+    price: number,
+}
+interface EBookinfo {
+    title: string,
+    author: string,
+    price: number,
+    file_format: "jpg"
+
+}
+
+interface Books extends Bookinfo {
+    title: string,
+    author: string,
+    price: number
+}
+
+interface Ebooks extends Bookinfo {
+    file_size: number
+    author: string,
+}
+interface Audiobooks extends Bookinfo {
+    vocals: string
+}
+const book1: Ebooks = {
+    title: "Title here",
+    author: "Author name",
+    price: 350,
+    file_size: 3624,
+}

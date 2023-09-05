@@ -27,4 +27,10 @@ const bankAccount = {
     transaction: [transaction2]
 };
 console.log(bankAccount);
+const book1 = {
+    title: "Title here",
+    author: "Author name",
+    price: 350,
+    file_size: 3624,
+};
 export {};
