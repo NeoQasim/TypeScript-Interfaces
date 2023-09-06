@@ -27,10 +27,21 @@ const bankAccount = {
     transaction: [transaction2]
 };
 console.log(bankAccount);
-const book1 = {
+const eBook1 = {
     title: "Title here",
     author: "Author name",
     price: 350,
-    file_size: 3624,
+    file_format: "pdf",
+    file_size: 1024
 };
+const aBook1 = {
+    title: "Audio book title ",
+    author: "Audiobooks Author",
+    price: 456,
+    file_size: 1024,
+    vocals: "Audio vocals",
+    file_format: "mp3"
+};
+console.log(eBook1);
+console.log(aBook1);
 export {};

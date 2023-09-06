@@ -57,30 +57,31 @@ interface Bookinfo {
     author: string,
     price: number,
 }
-interface EBookinfo {
-    title: string,
-    author: string,
-    price: number,
-    file_format: "jpg"
-
-}
-
-interface Books extends Bookinfo {
-    title: string,
-    author: string,
-    price: number
-}
-
-interface Ebooks extends Bookinfo {
+interface EBookinfo extends Bookinfo {
     file_size: number
-    author: string,
+    file_format: string
+
 }
-interface Audiobooks extends Bookinfo {
+
+interface Audiobooks extends EBookinfo {
     vocals: string
+
 }
-const book1: Ebooks = {
+const eBook1: EBookinfo = {
     title: "Title here",
     author: "Author name",
     price: 350,
-    file_size: 3624,
+    file_format: "pdf",
+    file_size: 1024
 }
+const aBook1: Audiobooks = {
+    title: "Audio book title ",
+    author: "Audiobooks Author",
+    price: 456,
+    file_size: 1024,
+    vocals: "Audio vocals",
+    file_format: "mp3"
+}
+
+console.log(eBook1);
+console.log(aBook1);
